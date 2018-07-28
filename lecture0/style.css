@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h1{
     color:blue;
     text-align:center;
@@ -31,3 +32,38 @@ th{
     color: red;
     font-weight: bold;
 }
+=======
+h1{
+    color:blue;
+    text-align:center;
+}
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: 10px;
+    width: 50%;
+    text-align: center;
+}
+th,td{
+    border: 1px solid black;
+    padding: 5px;
+}
+th{
+    border-color: lightgray;
+}
+
+#top{
+    font-size: 10px;
+}
+#middle{
+    font-size: 20px
+}
+#bottom{
+    font-size: 30px;
+}
+
+.name{
+    color: red;
+    font-weight: bold;
+}
+>>>>>>> 653e3ee0f42be27844a58d9e13ce4919f338d5b6
