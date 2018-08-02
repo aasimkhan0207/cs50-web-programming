@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>child</title>
+    </head>
+    <style media="screen">
+
+        /* style apply to every li that comes under ol - Descendant */
+
+        /* ol li{
+            color:red;
+        } */
+
+        /* style apply to immediate children of ol - Child*/
+        ol > li{
+            color:red;
+        }
+    </style>
+    <body>
+        <ol>
+            <li>item1</li>
+            <li>item2</li>
+            <ul>
+                <li>sub item1</li>
+                <li>sub item2</li>
+            </ul>
+            <li>item3</li>
+        </ol>
+    </body>
+</html>
