@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website!</title>
+    </head>
+    <style media="screen">
+        h1{
+            background-color: orange;
+            font-family: fantasy;
+            text-align: center;
+        }
+    </style>
+    <body>
+        <h1>My Web APP 2</h1>
+        <h3>{% block heading %}{% endblock %}</h3>
+
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>

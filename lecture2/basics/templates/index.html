@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <style media="screen">
+        body{
+            background-color: orange;
+        }
+    </style>
+    <body>
+        <h1>WELCOME TO PAGE</h1>
+        <!-- <h3>{{headline.age}}</h3> -->
+        <!-- <h2>is this month august? {{headline}}</h2> -->
+
+        <!-- using jinja to program like python in html -->
+        <ul>
+            {% for name in headline %}
+                <li>{{name}}</li>
+            {% endfor %}
+        </ul>
+
+        <a href="{{url_for('about')}}">About Us</a>
+
+    </body>
+</html>
