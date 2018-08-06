@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <style>
+        /* apply css when printed */
+        @media print {
+            .dont-print{
+                display: none;
+            }
+        }
+        /* apply css when page is atleast 500px wide */
+        @media (min-width: 500px) {
+            body{
+                background-color: yellow;
+            }
+            h1::before{
+                content: "Welcome To My Page"
+            }
+        }
+        /* apply css to smaller screen where max width of window is 499 */
+        @media (max-width: 499px) {
+            body{
+                background-color: green;
+            }
+            h1::before{
+                content: "Welcome!!"
+            }
+        }
+
+    </style>
+    <body>
+        <p>Paragraph 1 aafag</p>
+        <p>Paragraph 2 afgrg</p>
+        <p  class="dont-print">Paragraph 3 agrg</p>
+
+        <h1></h1>
+
+    </body>
+</html>

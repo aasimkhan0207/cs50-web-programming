@@ -1,0 +1,36 @@
+#env. path 
+C:\Program Files\PostgreSQL\10\bin
+
+# login to db user(postgres) with databse- localhost (or remote server add)
+>psql -U postgres -h localhost
+
+# create database 
+1. method from pgAdmin
+2. method cmd
+>create database mydb; (this give another db)
+
+# see list of all databases
+> \l
+
+# connect to database
+C:\Users\aasim>psql -U postgres -d cs50
+
+# change db connection to different databse
+> \c mydb;
+
+# create new user
+> create user r00d with password '***********';
+
+# connect database with new user
+> psql -U r00d -d cs50
+
+# drop db
+> drop database example_db;
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+# see all tables (must me already conneted to db)
+>\d
+
+# database url (local). <username>:<password> required in argument.
+engine = create_engine("postgresql://postgres:shummu12345@localhost:5432/cs50")
